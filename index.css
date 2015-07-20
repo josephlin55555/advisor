@@ -1,0 +1,98 @@
+.mainContainer {
+  width: 100%;
+  text-align: center;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.quotesContainer {
+  width: 100%;
+  text-align: center;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+
+.timer {
+  width: 100%;
+  text-align: center;
+  position: fixed;
+  top: 10%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+
+a {
+  color: black;
+}
+
+.moreTruth {
+  text-align: center;
+  position: fixed;
+  top: 90%;
+  left: 90%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  z-index: 3;
+}
+
+.moreTruth:hover, .profile:hover, .github:hover {
+  text-decoration: underline;
+  cursor: pointer;
+  cursor: hand;
+}
+
+body, html {
+  height: 100%;
+  background-color: #FFC00C;
+  font-size: 18px;
+}
+
+.loading {
+  position: fixed;
+  z-index: 1;
+
+  height: 100%;
+  width: 100%;
+}
+
+@-webkit-keyframes expand {
+  0% {
+    -webkit-transform: translateY(100%) translateX(100%) rotate(110deg);
+  }
+  100% {
+    -webkit-transform: rotate(110deg) scale(1, 2.5);
+    background-color: #C8F54C;
+  }
+}
+
+@-moz-keyframes expand {
+  0% {
+    -moz-transform: translateY(100%) translateX(100%) rotate(110deg);
+  }
+  100% {
+    -moz-transform: rotate(110deg) scale(1, 2.5);
+    background-color: #C8F54C;
+  }
+}
+
+.extra {
+  width: 100%;
+  text-align: center;
+  position: fixed;
+  top: 90%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+
+

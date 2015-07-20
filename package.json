@@ -1,0 +1,24 @@
+{
+  "name": "acmeadvisor",
+  "version": "1.0.0",
+  "description": "A rough mockup product to convey ACME's vision.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/josephlin55555/acmeAdvisor.git"
+  },
+  "author": "Joseph Lin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/josephlin55555/acmeAdvisor/issues"
+  },
+  "homepage": "https://github.com/josephlin55555/acmeAdvisor#readme",
+  "dependencies": {
+    "angular": "^1.4.3",
+    "express": "^4.13.1",
+    "materialize-css": "^0.96.1"
+  }
+}

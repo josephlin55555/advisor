@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="index.css"/>
+    <link rel="stylesheet" href="node_modules/materialize-css/bin/materialize.css"/>
+    <link rel="stylesheet" href="index.css"/>
+  </head>
+
+
+  <body ng-app="acmeApp" ng-controller="acmeController">
+    <div class="timer">
+      Data asynchronously retrieved in <span class="seconds">{{clock}}</span> second(s)
+    </div>
+
+
+
+    <div class="mainContainer">
+      <span>ACME</span>
+      <button ng-disabled="!clickable" ng-click="fetchData()" class="truthButton waves-effect waves-light btn-large">Truth</button>
+    </div>
+
+    <div class="quotesContainer" ng-show="showQuote">
+      <div class="quote" ng-repeat="item in fortune">
+        {{item}}
+      </div>
+    </div>
+
+    <span ng-show="truthClickable" class="moreTruth">
+      <a href="#" ng-click="reset()">
+        More Truth -->
+      </a>
+    </span>
+
+    <span class="extra">
+        Created by 
+        <a class="profile" target="_blank" href="https://github.com/josephlin55555">Joseph Lin</a>
+      
+        <br>
+        Want to fork this?  
+        <a class="github" target="_blank" href="https://github.com/josephlin55555/acmeAdvisor">Click here</a>! 
+    </span>
+
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="node_modules/materialize-css/bin/materialize.js"></script>
+    <script src="node_modules/angular/angular.js"></script>
+    <script src="client.js"></script>
+  </body>
+</html>
