@@ -22,8 +22,11 @@ angular.module('acmeApp', [])
     
     //hard-coded quotes in case of get request failure
     $scope.preselectedQuotes = [
-      "hey",
-      "lol"
+      "Your eyes can deceive you; don't trust them.",
+      "Fear is the path to the Dark Side. Fear leads to anger, anger leads to hate, hate leads to suffering.",
+      "Luminous beings are we. Not this crude matter.",
+      "Adventure. Excitement. A Jedi craves not these things.",
+      "There is no emotion, there is peace..."
     ];
 
     //once button is clicked, remove both button and ACME title
