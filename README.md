@@ -6,7 +6,7 @@ Deployed to http://acme-advisor.herokuapp.com/
 
 # Instructions  
 1) npm install  
-2) node server.js (or other equivalent)  
+2) node server.js (or other equivalent)- PORT 8000  
 
 # Tech Stack  
 1) AngularJS  
