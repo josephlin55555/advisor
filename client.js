@@ -65,8 +65,6 @@ angular.module('acmeApp', [])
       $http.get('http://api.acme.international/fortune').
         //if the get request is a success
         success(function(data) {
-          console.log(data);
-          
           if(data.fortune) {
             //put quotes on display
             data.fortune.forEach(function(element) {
