@@ -1,4 +1,8 @@
 # ACMEAdvisor  
+A rough mockup product to convey ACME's vision.  
+
+# Deployment  
+Deployed to http://acme-advisor.herokuapp.com/  
 
 # Instructions  
 1) npm install  
