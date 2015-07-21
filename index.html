@@ -1,34 +1,44 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <!-- css files -->
     <link rel="stylesheet" href="index.css"/>
     <link rel="stylesheet" href="node_modules/materialize-css/bin/materialize.css"/>
     <link rel="stylesheet" href="index.css"/>
+
+    <!-- bypasses loading page bugs -->
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="node_modules/angular/angular.js"></script>
   </head>
 
-
   <body ng-app="acmeApp" ng-controller="acmeController">
+
+    <!-- top center timer -->
     <div class="timer">
       Data asynchronously retrieved in <span class="seconds">{{clock}}</span> second(s)
     </div>
 
+    <!-- center title and button -->
     <div class="mainContainer">
       <span>ACME</span>
-      <button ng-disabled="!clickable" ng-click="fetchData()" class="truthButton waves-effect waves-light btn-large">Truth</button>
+      <button ng-disabled="!clickable" ng-click="fetchData()" class="truthButton red waves-effect waves-light btn-large">Truth</button>
     </div>
 
-    <div class="quotesContainer" ng-show="showQuote">
-      <div class="quote" ng-repeat="item in fortune">
+    <!-- quotes that show after button is pressed -->
+    <div class="quotesContainer">
+      <div class="quote" ng-show="showQuote" ng-repeat="item in fortune">
         {{item}}
       </div>
     </div>
 
+    <!-- bottom right link to restart -->
     <span ng-show="truthClickable" class="moreTruth">
-      <a href="#" ng-click="reset()">
+      <a href="" ng-click="reset()">
         More Truth -->
       </a>
     </span>
 
+    <!-- bottom center links to profile and github -->
     <span class="extra">
         Created by 
         <a class="profile" target="_blank" href="https://github.com/josephlin55555">Joseph Lin</a>
@@ -38,9 +48,9 @@
         <a class="github" target="_blank" href="https://github.com/josephlin55555/acmeAdvisor">Click here</a>! 
     </span>
 
-    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <!-- remaining script files -->
     <script src="node_modules/materialize-css/bin/materialize.js"></script>
-    <script src="node_modules/angular/angular.js"></script>
     <script src="client.js"></script>
+    
   </body>
 </html>

@@ -112,6 +112,7 @@ angular.module('acmeApp', [])
         */
         '-webkit-animation': 'expand 4s',
         '-webkit-animation-fill-mode': 'forwards',
+        '-webkit-animation-timing-function': 'ease-in',
         
         /*
           for firefox
@@ -126,10 +127,24 @@ angular.module('acmeApp', [])
         //reveals bottom right link
         $scope.showQuote = true;
         $scope.truthClickable = true;
+
+        //quotation fade-in animation
+        $('.quote').css({
+          //safari, chrome, and opera
+          '-webkit-animation': 'fade 2s',
+          '-webkit-animation-fill-mode': 'forwards', 
+          '-webkit-animation-timing-function': 'ease-in',
+
+          //firefox
+          '-moz-animation': 'fade 2s',
+          '-moz-animation-fill-mode': 'forwards',
+          '-moz-animation-timing-function': 'ease-in'
+        });
       }, 4000);
     };
 
     $scope.reset = function() {
+
       //resert quotes and timer
       $scope.fortune = [];
       $scope.clock = 0;
@@ -145,5 +160,4 @@ angular.module('acmeApp', [])
       //once reset occurs, quote are removed
       $scope.showQuote = false;
     };
-
   });

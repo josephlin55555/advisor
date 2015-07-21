@@ -1,3 +1,6 @@
+/*********************** Main *******************************************/
+
+/* Contains ACME and TRUTH button in the middle*/
 .mainContainer {
   width: 100%;
   text-align: center;
@@ -6,8 +9,10 @@
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
+  font-size: 25px;
 }
 
+/* Quotations */
 .quotesContainer {
   width: 100%;
   text-align: center;
@@ -17,8 +22,10 @@
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   z-index: 2;
+  font-size: 25px;
 }
 
+/* Upper Centered async timer */
 .timer {
   width: 100%;
   text-align: center;
@@ -30,10 +37,12 @@
   z-index: 2;
 }
 
+/* links are now colored black instead of blue */
 a {
   color: black;
 }
 
+/* lower right link to restart from the beginning */
 .moreTruth {
   text-align: center;
   position: fixed;
@@ -44,46 +53,30 @@ a {
   z-index: 3;
 }
 
+/* fixes bug that disable underlining and cursor indication when hovering over links */
 .moreTruth:hover, .profile:hover, .github:hover {
   text-decoration: underline;
   cursor: pointer;
   cursor: hand;
 }
 
+/* allows for loading page to take up the entire screen */
 body, html {
   height: 100%;
-  background-color: #FFC00C;
   font-size: 18px;
+  /* orange color background */
+  background-color: #FFC00C;
 }
 
+/* light-blue loading page (once fully loaded) */
 .loading {
   position: fixed;
   z-index: 1;
-
   height: 100%;
   width: 100%;
 }
 
-@-webkit-keyframes expand {
-  0% {
-    -webkit-transform: translateY(100%) translateX(100%) rotate(110deg);
-  }
-  100% {
-    -webkit-transform: rotate(110deg) scale(1, 2.5);
-    background-color: #C8F54C;
-  }
-}
-
-@-moz-keyframes expand {
-  0% {
-    -moz-transform: translateY(100%) translateX(100%) rotate(110deg);
-  }
-  100% {
-    -moz-transform: rotate(110deg) scale(1, 2.5);
-    background-color: #C8F54C;
-  }
-}
-
+/* github and profile links @ bottom center */
 .extra {
   width: 100%;
   text-align: center;
@@ -94,5 +87,54 @@ body, html {
   transform: translate(-50%, -50%);
   z-index: 2;
 }
+
+/************************ chrome, safari, and opera web browser *******************************/
+
+/* diagonal loading screen */
+@-webkit-keyframes expand {
+  0% {
+    -webkit-transform: translateY(100%) translateX(100%) rotate(110deg);
+  }
+  100% {
+    -webkit-transform: rotate(110deg) scale(1, 2.5);
+    background-color: #A2DED0;
+  }
+}
+
+/* allows fade-in animation for quotes */
+@-webkit-keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/***************************** Firefox web browser ********************************************/
+
+/* diagonal loading screen */
+@-moz-keyframes expand {
+  0% {
+    -moz-transform: translateY(100%) translateX(100%) rotate(110deg);
+  }
+  100% {
+    -moz-transform: rotate(110deg) scale(1, 2.5);
+    background-color: #A2DED0;
+  }
+}
+
+/* fade-in animation for quotes */
+@-moz-keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+
+
 
 
