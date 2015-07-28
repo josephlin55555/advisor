@@ -8,5 +8,5 @@ application.set('view engine', 'ejs');
 application.use(express.static(__dirname));
 
 application.listen(port, function() {
-  console.log('acmeAdvisor is running on port ' + port);
+  console.log('Advisor is running on port ' + port);
 });

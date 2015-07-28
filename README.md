@@ -1,4 +1,4 @@
-# ACMEAdvisor  
+# Advisor  
 A rough mockup product to convey ACME's vision.  
 
 # Deployment  
